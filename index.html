@@ -6,79 +6,80 @@
   <title>EmpowerHer - Girls Empowerment through Studies</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
       padding: 0;
-      background: #f4f4f9;
+      background: #fff8f6;
       color: #333;
     }
 
     header {
-      background: #7e57c2;
+      background: linear-gradient(135deg, #9c27b0, #e91e63);
       color: #fff;
-      padding: 20px 0;
+      padding: 30px 0;
       text-align: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     }
 
     nav {
-      background: #5e35b1;
-      padding: 10px;
+      background: #d81b60;
+      padding: 12px;
       text-align: center;
     }
 
     nav a {
-      color: white;
+      color: #fff;
       text-decoration: none;
-      margin: 0 15px;
+      margin: 0 20px;
       font-weight: bold;
+      font-size: 16px;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffdbe5;
     }
 
     section {
-      padding: 30px;
-      max-width: 800px;
+      padding: 40px 20px;
+      max-width: 900px;
       margin: auto;
     }
 
     h2 {
-      color: #5e35b1;
-    }
-
-    form {
-      background: #fff;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    }
-
-    label {
-      display: block;
-      margin-bottom: 5px;
-      font-weight: bold;
-    }
-
-    input, textarea {
-      width: 100%;
-      padding: 10px;
+      color: #d81b60;
       margin-bottom: 15px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
     }
 
-    button {
-      background: #7e57c2;
-      color: white;
-      border: none;
-      padding: 10px 20px;
-      font-size: 16px;
-      border-radius: 4px;
-      cursor: pointer;
+    p {
+      font-size: 18px;
+      line-height: 1.6;
     }
 
     footer {
-      background: #eee;
+      background: #f8eaf1;
       text-align: center;
-      padding: 10px;
-      margin-top: 40px;
+      padding: 15px;
+      color: #666;
+      font-size: 14px;
+      margin-top: 60px;
+    }
+
+    .register-button {
+      display: inline-block;
+      background: #ec407a;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      margin-top: 25px;
+      transition: background 0.3s ease;
+    }
+
+    .register-button:hover {
+      background: #ad1457;
     }
   </style>
 </head>
@@ -93,12 +94,13 @@
     <a href="#home">Home</a>
     <a href="#vision">Vision</a>
     <a href="#ambition">Ambition</a>
-    <a href="#register">Register</a>
+    <a href="registration.html">Register</a>
   </nav>
 
   <section id="home">
     <h2>Welcome to EmpowerHer</h2>
     <p>We believe every girl deserves the right to education and the power to dream big. EmpowerHer is a platform dedicated to helping girls grow through access to knowledge, mentorship, and community support.</p>
+    <a href="registration.html" class="register-button">Register Now</a>
   </section>
 
   <section id="vision">
@@ -109,25 +111,6 @@
   <section id="ambition">
     <h2>Our Ambition</h2>
     <p>To create a global network of mentors, educators, and resources to inspire and support young girls in becoming future leaders, thinkers, and innovators through education and empowerment.</p>
-  </section>
-
-  <section id="register">
-    <h2>Join Us</h2>
-    <form>
-      <label for="name">Full Name:</label>
-      <input type="text" id="name" name="name" required />
-
-      <label for="age">Age:</label>
-      <input type="number" id="age" name="age" required />
-
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required />
-
-      <label for="message">Why do you want to join?</label>
-      <textarea id="message" name="message" rows="4" required></textarea>
-
-      <button type="submit">Register</button>
-    </form>
   </section>
 
   <footer>
