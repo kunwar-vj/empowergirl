@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Register - EmpowerHer</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fff8f6;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(135deg, #9c27b0, #e91e63);
+      color: #fff;
+      padding: 30px 0;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    nav {
+      background: #d81b60;
+      padding: 12px;
+      text-align: center;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: bold;
+      font-size: 16px;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffdbe5;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #d81b60;
+      margin-bottom: 20px;
+    }
+
+    form {
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+
+    button {
+      background: #ec407a;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background: #ad1457;
+    }
+
+    footer {
+      background: #f8eaf1;
+      text-align: center;
+      padding: 15px;
+      color: #666;
+      font-size: 14px;
+      margin-top: 60px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>EmpowerHer</h1>
+    <p>Empowering Girls Through Education</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="#register">Register</a>
+  </nav>
+
+  <section id="register">
+    <h2>Join Our Mission</h2>
+    <form>
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="message">Why do you want to join?</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <button type="submit">Register</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 EmpowerHer | Together, we rise.</p>
+  </footer>
+
+</body>
+</html>
